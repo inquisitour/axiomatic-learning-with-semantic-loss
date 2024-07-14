@@ -2,7 +2,7 @@
 
 ## Abstract
 
-This paper presents a novel approach to enhancing causal reasoning capabilities in transformer models by integrating axiomatic training with a tailored semantic loss function. Building upon recent advances in teaching transformers causal reasoning through axiom demonstrations and incorporating symbolic knowledge via semantic loss, we propose a unified framework that leverages the strengths of both methods. Our approach combines the data generation techniques and evaluation metrics from axiomatic training with a modified semantic loss function specifically designed for causal inference tasks. We provide theoretical foundations for our method, demonstrating its convergence properties and connections to statistical learning theory. Extensive experiments on synthetic and real-world datasets demonstrate significant improvements in generalization across complex causal structures, sample efficiency, and performance on challenging causal reasoning benchmarks. We also address scalability to large causal graphs, robustness to uncertainty, and the ethical implications of advanced causal reasoning systems. Our results suggest that this integrated approach offers a promising direction for developing more robust, interpretable, and generalizable AI systems capable of sophisticated causal reasoning.
+This paper presents a novel approach to enhancing causal reasoning capabilities in transformer models by integrating axiomatic training with a tailored semantic loss function. Building upon recent advances in teaching transformers causal reasoning through axiom demonstrations and incorporating symbolic knowledge via semantic loss, we propose a unified framework that leverages the strengths of both methods. Our approach combines the data generation techniques and evaluation metrics from axiomatic training with a modified semantic loss function specifically designed for causal inference tasks. We provide theoretical foundations for our method, demonstrating its convergence properties and connections to statistical learning theory. Extensive experiments on synthetic and real-world datasets demonstrate significant improvements in generalization across complex causal structures, sample efficiency, and performance on challenging causal reasoning benchmarks. We also address scalability to large causal graphs and robustness to uncertainty. Our results suggest that this integrated approach offers a promising direction for developing more robust, interpretable, and generalizable AI systems capable of sophisticated causal reasoning.
 
 ## 1. Introduction
 
@@ -16,7 +16,6 @@ The key contributions of this paper are:
 4. An innovative data generation technique that incorporates diverse causal structures and axioms.
 5. Comprehensive empirical evaluations demonstrating improved generalization and performance on causal reasoning benchmarks.
 6. Analysis of model scalability, robustness to uncertainty, and interpretability of learned causal representations.
-7. Discussion of ethical considerations and future directions for causal reasoning in AI systems.
 
 ## 2. Background
 
@@ -309,90 +308,24 @@ We analyze the attention patterns in our transformer model in relation to ground
 
 Results show a strong correlation between transformer attention and true causal relationships, providing insights into the model's reasoning process.
 
-## 9. Real-world Case Studies
+## 9. Conclusion and Future Directions
 
-We demonstrate the practical impact of our approach through case studies on real-world causal reasoning tasks:
+### 9.1 Summary of Contributions
 
-### 9.1 Medical Diagnosis and Treatment Planning
+We have presented a novel approach to causal reasoning in transformer models, integrating axiomatic training with a tailored semantic loss function. Our method demonstrates significant improvements in generalization, sample efficiency, and performance on challenging causal reasoning benchmarks. We have provided theoretical foundations for our approach, comprehensive empirical evaluations, and analyses of scalability, robustness, and interpretability.
 
-We apply our model to a large-scale electronic health records dataset:
-- Causal discovery of relationships between symptoms, diseases, and treatment
-- Evaluation of treatment effects using our causal inference framework
-- Comparison with traditional statistical methods and expert physician judgments
-
-Results show that our model successfully identifies complex causal relationships in medical data, leading to more accurate diagnoses and personalized treatment recommendations. In a blind evaluation, treatment plans suggested by our model were preferred by expert physicians in 78% of cases compared to standard guidelines.
-
-### 9.2 Economic Policy Analysis
-
-We apply our causal reasoning framework to analyze the impact of economic policies:
-
-- Dataset: Historical economic data from 50 countries over 30 years, including various economic indicators and policy interventions
-- Task: Infer causal relationships between economic policies and outcomes
-- Evaluation: Compare model predictions with expert economist judgments and real-world policy outcomes
-
-Key findings:
-1. Our model successfully identified non-linear and time-lagged causal effects of monetary policies on inflation and employment
-2. The model uncovered previously unrecognized interaction effects between fiscal and trade policies
-3. Policy recommendations generated by our model were rated as "highly insightful" by a panel of economists in 85% of cases
-
-### 9.3 Climate Change Modeling
-
-We demonstrate our model's capability in understanding complex, interconnected causal systems through climate change modeling:
-
-- Dataset: Comprehensive climate data including temperature, CO2 levels, solar activity, and human factors over the past century
-- Task: Infer causal relationships between various factors and global temperature changes
-- Evaluation: Compare model inferences with established climate models and expert knowledge
-
-Results:
-1. Our model accurately identified the causal impact of greenhouse gas emissions on global temperature trends
-2. The approach uncovered subtle, non-linear relationships between solar activity, ocean currents, and regional climate patterns
-3. The model's causal structure aligned closely with expert-designed climate models, while also suggesting novel feedback loops for further investigation
-
-These case studies demonstrate the versatility and effectiveness of our causal reasoning approach in tackling complex, real-world problems across diverse domains.
-
-## 10. Ethical Considerations
-
-As responsible AI researchers, we must address the ethical implications of advanced causal reasoning systems:
-
-### 10.1 Potential Biases in Causal Inference
-
-- Discussion of how biased training data can lead to skewed causal inferences
-- Analysis of our model's performance across different demographic groups
-- Proposed mitigation strategies, including diverse data collection and fairness constraints in the learning process
-
-### 10.2 Privacy Concerns
-
-- Examination of potential privacy risks when inferring causal relationships from sensitive data
-- Proposed privacy-preserving techniques, such as differential privacy and federated learning, for causal reasoning
-- Discussion of ethical guidelines for applying causal inference in sensitive domains (e.g., healthcare, criminal justice)
-
-### 10.3 Misuse and Misinterpretation
-
-- Analysis of potential risks if causal reasoning systems are misused or their outputs are misinterpreted
-- Proposed safeguards, including uncertainty quantification and clear communication of model limitations
-- Discussion of the need for human oversight and domain expertise in interpreting model outputs
-
-### 10.4 Long-term Societal Impact
-
-- Exploration of how advanced causal reasoning AI could impact decision-making processes in various sectors
-- Discussion of potential effects on employment, particularly in analytical and decision-making roles
-- Proposed strategies for responsible development and deployment of causal reasoning AI
-
-## 11. Conclusion and Future Directions
-
-### 11.1 Summary of Contributions
-
-We have presented a novel approach to causal reasoning in transformer models, integrating axiomatic training with a tailored semantic loss function. Our method demonstrates significant improvements in generalization, sample efficiency, and performance on challenging causal reasoning benchmarks. We have provided theoretical foundations for our approach, comprehensive empirical evaluations, and real-world case studies demonstrating its practical impact.
-
-### 11.2 Limitations
+### 9.2 Limitations
 
 Despite its strengths, our approach has several limitations:
+
 - Scalability challenges for extremely large causal graphs (>10^6 nodes)
 - Reliance on the accuracy and completeness of encoded causal axioms
 - Potential difficulties in handling cyclic causal relationships
 - Computational intensity that may limit real-time applications
+- Current focus on discrete causal relationships, with limited handling of continuous variables
+- Assumption of causal sufficiency in most experiments, which may not hold in all real-world scenarios
 
-### 11.3 Future Research Directions
+### 9.3 Future Research Directions
 
 We outline a roadmap for future research that builds on our work:
 
@@ -408,23 +341,31 @@ We outline a roadmap for future research that builds on our work:
    - Incorporate our causal reasoning framework into reinforcement learning agents
    - Explore how causal understanding can improve sample efficiency and generalization in RL
 
-4. Quantum-inspired Causal Reasoning:
-   - Investigate potential connections between quantum mechanics and causal inference
-   - Develop quantum-inspired algorithms for causal discovery and reasoning
+4. Continuous and Mixed Variable Types:
+   - Extend the framework to handle continuous variables and mixed discrete-continuous systems
+   - Develop techniques for inferring functional forms of causal relationships
 
-5. Causal Transfer Learning:
+5. Scalable Algorithms for Large-scale Causal Structures:
+   - Investigate distributed and parallel computing approaches for handling massive causal graphs
+   - Develop approximation algorithms for semantic loss computation in dense, large-scale networks
+
+6. Causal Transfer Learning:
    - Explore how causal knowledge can be transferred across domains
    - Develop techniques for zero-shot and few-shot causal reasoning in new environments
 
-6. Human-AI Collaboration in Causal Reasoning:
-   - Design interactive systems that combine human expertise with AI-driven causal inference
-   - Develop explainable AI techniques specifically for causal reasoning models
-
-7. Causal Reasoning in Language Models:
+7. Integration with Large Language Models:
    - Investigate how our approach can enhance the causal understanding capabilities of large language models
    - Develop benchmarks for evaluating causal reasoning in natural language processing tasks
 
-In conclusion, our work represents a significant step forward in causal reasoning capabilities for AI systems. By combining the strengths of axiomatic training and semantic loss, we have developed a powerful and flexible framework that shows promise in advancing the field of causal AI. As we continue to refine and extend this approach, we anticipate exciting developments that will bring us closer to AI systems capable of human-like causal reasoning and decision-making.
+### 9.4 Concluding Remarks
+
+In this paper, we have presented a novel integration of axiomatic training and semantic loss for enhancing causal reasoning capabilities in transformer models. Our approach demonstrates significant improvements in generalization, sample efficiency, and performance on challenging causal reasoning tasks. By combining the strengths of both methods, we have created a flexible and powerful framework that can adapt to a wide range of causal reasoning scenarios.
+
+The theoretical foundations we have established provide a solid basis for understanding the convergence properties and learning dynamics of our method. Our comprehensive empirical evaluations, including analyses of scalability, robustness to noise and uncertainty, and interpretability, demonstrate the practical effectiveness of our approach across various causal reasoning tasks.
+
+As AI systems continue to tackle increasingly complex real-world problems, the ability to perform accurate and robust causal reasoning becomes ever more critical. Our work represents a significant step towards developing AI systems capable of human-like causal understanding and inference. We believe that the integration of symbolic knowledge through axioms and the flexibility of deep learning models, as demonstrated in our approach, will be key to advancing the field of causal AI.
+
+While there are still challenges to address, particularly in scaling to extremely large causal structures and handling more complex real-world scenarios, the framework we have developed provides a strong foundation for future research. As we continue to refine and extend this approach, we anticipate exciting developments that will bring us closer to AI systems capable of sophisticated causal reasoning across a wide range of domains and applications.
 
 ## References
 
@@ -447,3 +388,4 @@ In conclusion, our work represents a significant step forward in causal reasonin
 [9] Goodfellow, I., Bengio, Y., & Courville, A. (2016). Deep Learning. MIT Press.
 
 [10] Peters, J., Janzing, D., & Schölkopf, B. (2017). Elements of Causal Inference: Foundations and Learning Algorithms. MIT Press.
+
