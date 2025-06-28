@@ -1,0 +1,200 @@
+{"premise": "NV causes Sbu. Ba causes NV. Z9 causes Ba. Ca causes Z9. 3b causes Ca. zph causes 3b.", "hypothesis": "Does NV cause 3b?", "label": "No"}
+{"premise": "pj causes Jd. k causes pj. r causes k. g causes r. An causes g. F0 causes An. x causes F0.", "hypothesis": "Does F0 cause x?", "label": "No"}
+{"premise": "DKU causes r. nm causes DKU. L8 causes nm. lV causes L8. nI causes lV. c causes nI. a causes c. 0M causes a. ym causes 0M. HUJ causes ym. s1Y causes HUJ.", "hypothesis": "Does ym cause s1Y?", "label": "No"}
+{"premise": "JI causes Ib. a causes JI. B causes a. Uwh causes B. q1 causes Uwh. xP causes q1.", "hypothesis": "Does Ib cause a?", "label": "No"}
+{"premise": "91 causes 7. e causes 91. Gj5 causes e. P causes Gj5. f causes P. SMG causes f. f causes SMG. Sd causes f. PgT causes Sd. gyz causes PgT. GW1 causes gyz.", "hypothesis": "Does 7 cause Gj5?", "label": "No"}
+{"premise": "rZ causes j0. o causes rZ. 7 causes o. D causes 7. hX causes D. TnV causes hX. V3 causes TnV. Nh causes V3. 1uv causes Nh.", "hypothesis": "Does rZ cause TnV?", "label": "No"}
+{"premise": "c0n causes Ku. 9mN causes c0n. 4 causes 9mN. 97V causes 4. x causes 97V. l6f causes x. Y causes l6f. h causes Y. 3Lz causes h. T causes 3Lz. y causes T. Q9 causes y. SN causes Q9. z causes SN.", "hypothesis": "Does 97V cause h?", "label": "No"}
+{"premise": "ED causes X8. nB causes ED. bpA causes nB. Ty causes bpA. 7y5 causes Ty. MU9 causes 7y5. xZg causes MU9. dU causes xZg. TL8 causes dU. A causes TL8. vL causes A. PW causes vL. L causes PW. F causes L.", "hypothesis": "Does nB cause Ty?", "label": "No"}
+{"premise": "K causes Lb. yME causes K. n causes yME. gxb causes n. PIU causes gxb. d9 causes PIU. 8y8 causes d9. sM5 causes 8y8. KY causes sM5. rxE causes KY. yT causes rxE. 6Uf causes yT. J causes 6Uf. x causes J.", "hypothesis": "Does yME cause 8y8?", "label": "No"}
+{"premise": "ky causes CRX. 6jY causes ky. 9Aa causes 6jY. lK causes 9Aa. G causes lK. o causes G. 0 causes o. hFA causes 0. h causes hFA. Fo causes h. 9XW causes Fo. l causes 9XW. at causes l.", "hypothesis": "Does 6jY cause l?", "label": "No"}
+{"premise": "Cqv causes j. D causes Cqv. ixH causes D. Ts5 causes ixH. e causes Ts5. L8 causes e. Ke causes L8. 0 causes Ke. P50 causes 0. oO causes P50.", "hypothesis": "Does e cause oO?", "label": "No"}
+{"premise": "5zL causes R. c causes 5zL. HM causes c. gsx causes HM. lN causes gsx. L causes lN. lU causes L.", "hypothesis": "Does R cause 5zL?", "label": "No"}
+{"premise": "KRb causes sj. PNY causes KRb. h causes PNY. C7 causes h. K causes C7. Z causes K. FEt causes Z. g0 causes FEt. L causes g0. x causes L.", "hypothesis": "Does Z cause g0?", "label": "No"}
+{"premise": "yv causes YD4. DP causes yv. 4n causes DP. QP causes 4n. jG causes QP. ws causes jG. U causes ws. dD causes U. d causes dD. xZ causes d. ap5 causes xZ. X causes ap5.", "hypothesis": "Does 4n cause xZ?", "label": "No"}
+{"premise": "l causes E. H causes l. m causes H. v37 causes m. m causes v37. 0D causes m.", "hypothesis": "Does m cause m?", "label": "No"}
+{"premise": "Mg causes O. Im causes Mg. bM causes Im. ZQ causes bM. Nm causes ZQ. RvL causes Nm. ZGv causes RvL. 5x causes ZGv. i4 causes 5x. oUn causes i4. Q4 causes oUn.", "hypothesis": "Does Im cause Nm?", "label": "No"}
+{"premise": "w causes Cyq. iCg causes w. F causes iCg. z8 causes F. h causes z8. xdM causes h. J causes xdM. qV causes J. xOt causes qV. z causes xOt.", "hypothesis": "Does qV cause z?", "label": "No"}
+{"premise": "1T7 causes Nd9. E causes 1T7. L causes E. tJr causes L. J causes tJr. tDc causes J. 8O causes tDc. 8c causes 8O.", "hypothesis": "Does J cause tDc?", "label": "No"}
+{"premise": "3Lh causes Atm. z causes 3Lh. JE causes z. c causes JE. t causes c. KK causes t. T4 causes KK.", "hypothesis": "Does t cause T4?", "label": "No"}
+{"premise": "C1 causes qP. I causes C1. PX causes I. Ic causes PX. T causes Ic. FHs causes T. 4 causes FHs.", "hypothesis": "Does Ic cause 4?", "label": "No"}
+{"premise": "wXN causes nNB. Ef causes wXN. kO causes Ef. 0nB causes kO. f causes 0nB. B causes f. 0e causes B. Je causes 0e. 8 causes Je. XM causes 8. su causes XM. 4mR causes su.", "hypothesis": "Does wXN cause 4mR?", "label": "No"}
+{"premise": "T causes r. 5 causes T. WbE causes 5. rzc causes WbE. pL causes rzc. n causes pL.", "hypothesis": "Does 5 cause n?", "label": "No"}
+{"premise": "0yg causes QP. 3Qd causes 0yg. Nq causes 3Qd. pc causes Nq. X causes pc. YHa causes X. ZF0 causes YHa. t causes ZF0. g causes t. bYy causes g. s causes bYy. G causes s. M causes G. Kz causes M.", "hypothesis": "Does Nq cause bYy?", "label": "No"}
+{"premise": "5H causes ang. pW causes 5H. R1J causes pW. O2 causes R1J. K causes O2. 160 causes K. MbY causes 160.", "hypothesis": "Does 5H cause MbY?", "label": "No"}
+{"premise": "I causes OuG. 5AA causes I. Ro causes 5AA. WCq causes Ro. hd8 causes WCq. Y causes hd8. ulh causes Y. 4 causes ulh. wnh causes 4.", "hypothesis": "Does OuG cause 5AA?", "label": "No"}
+{"premise": "9DT causes R7W. AFc causes 9DT. I causes AFc. SZ4 causes I. Af causes SZ4. V causes Af. bx causes V.", "hypothesis": "Does AFc cause I?", "label": "No"}
+{"premise": "q8 causes JL. kM7 causes q8. K causes kM7. VR causes K. 8 causes VR. a0c causes 8.", "hypothesis": "Does q8 cause 8?", "label": "No"}
+{"premise": "2 causes 4UH. 0X causes 2. elR causes 0X. 6jj causes elR. Yh9 causes 6jj. MG causes Yh9. 3j3 causes MG. rbw causes 3j3. TYJ causes rbw. FMH causes TYJ. u causes FMH.", "hypothesis": "Does elR cause FMH?", "label": "No"}
+{"premise": "Liw causes k. H causes Liw. rN causes H. 5jW causes rN. LI causes 5jW. 5 causes LI. BY causes 5.", "hypothesis": "Does Liw cause 5?", "label": "No"}
+{"premise": "2r causes gx. 7mQ causes 2r. TMS causes 7mQ. O causes TMS. J9g causes O. F causes J9g. Iax causes F. 6JV causes Iax. h causes 6JV. e4 causes h. cU causes e4. yvs causes cU. fm causes yvs. DU0 causes fm.", "hypothesis": "Does F cause DU0?", "label": "No"}
+{"premise": "B causes 4. d causes B. El causes d. 6o causes El. FAM causes 6o. Ikr causes FAM. g causes Ikr. IK causes g. r causes IK. a causes r. mOM causes a. Y causes mOM.", "hypothesis": "Does 6o cause g?", "label": "No"}
+{"premise": "Jh causes ij. R causes Jh. S causes R. dTE causes S. o causes dTE. C causes o. nr causes C.", "hypothesis": "Does o cause nr?", "label": "No"}
+{"premise": "uQj causes h4. m causes uQj. dQ causes m. 4 causes dQ. Iuu causes 4. du7 causes Iuu. i causes du7. kRY causes i. g causes kRY. m causes g.", "hypothesis": "Does m cause i?", "label": "Yes"}
+{"premise": "hF causes NfG. cT4 causes hF. OO causes cT4. g causes OO. n causes g. 1o causes n.", "hypothesis": "Does hF cause g?", "label": "No"}
+{"premise": "4vt causes K. C causes 4vt. 8I causes C. zkZ causes 8I. j causes zkZ. h8y causes j. pY causes h8y.", "hypothesis": "Does zkZ cause h8y?", "label": "No"}
+{"premise": "s causes p. 9l causes s. 1N causes 9l. d9 causes 1N. jln causes d9. R causes jln. VX causes R. H causes VX.", "hypothesis": "Does s cause 1N?", "label": "No"}
+{"premise": "8pG causes dJ. to causes 8pG. O causes to. t causes O. 64 causes t. qZ causes 64. np7 causes qZ. TV causes np7.", "hypothesis": "Does dJ cause t?", "label": "No"}
+{"premise": "9X causes l8. r causes 9X. u causes r. be causes u. 4Uc causes be. rdC causes 4Uc.", "hypothesis": "Does r cause u?", "label": "No"}
+{"premise": "vB causes E. 6s causes vB. w causes 6s. X causes w. c causes X. ju causes c. t causes ju. ze causes t. d causes ze. 82r causes d. 5 causes 82r. I causes 5.", "hypothesis": "Does w cause 5?", "label": "No"}
+{"premise": "A causes Z. G causes A. g44 causes G. AeA causes g44. RH0 causes AeA. mR causes RH0. dCy causes mR. Ovj causes dCy. T causes Ovj. 0Ul causes T. tp causes 0Ul. m causes tp. 5D causes m. a causes 5D.", "hypothesis": "Does A cause AeA?", "label": "No"}
+{"premise": "Pf causes q7s. sW8 causes Pf. x6V causes sW8. OKg causes x6V. 98 causes OKg. 6 causes 98. X causes 6. Q causes X. 9h causes Q. 6Q causes 9h. CF1 causes 6Q.", "hypothesis": "Does 98 cause Q?", "label": "No"}
+{"premise": "I causes 9L. ode causes I. t causes ode. sy causes t. NY causes sy. nL causes NY. wR5 causes nL. R causes wR5.", "hypothesis": "Does ode cause nL?", "label": "No"}
+{"premise": "a causes 9. y9u causes a. vMs causes y9u. m causes vMs. DXY causes m. rhq causes DXY. J causes rhq. LmW causes J. Gfo causes LmW. J causes Gfo.", "hypothesis": "Does rhq cause Gfo?", "label": "No"}
+{"premise": "yt causes Mc. TW causes yt. vS3 causes TW. tn causes vS3. HO causes tn. X causes HO. Ed causes X. ZDz causes Ed. jf5 causes ZDz. Y causes jf5. XHH causes Y. Hgx causes XHH.", "hypothesis": "Does TW cause jf5?", "label": "No"}
+{"premise": "Z causes z. Dl causes Z. o1Z causes Dl. N causes o1Z. 7 causes N. HyN causes 7. lfB causes HyN. pwX causes lfB. 6 causes pwX.", "hypothesis": "Does o1Z cause 7?", "label": "No"}
+{"premise": "v5 causes J5Y. u causes v5. P causes u. 9hN causes P. BJ7 causes 9hN. v causes BJ7. h causes v. jo causes h. 7el causes jo. vU causes 7el. LS causes vU. f causes LS.", "hypothesis": "Does BJ7 cause LS?", "label": "No"}
+{"premise": "Edm causes O. 9h causes Edm. 6Y causes 9h. ewY causes 6Y. 8 causes ewY. 2Gc causes 8. ya causes 2Gc.", "hypothesis": "Does O cause 6Y?", "label": "No"}
+{"premise": "C causes ABi. P causes C. v5 causes P. WhB causes v5. h causes WhB. Q1 causes h. Vau causes Q1. v causes Vau. 2ng causes v. Hs4 causes 2ng. 3EZ causes Hs4. IV causes 3EZ.", "hypothesis": "Does P cause Vau?", "label": "No"}
+{"premise": "S causes Ah. NT causes S. ZM causes NT. OWu causes ZM. O causes OWu. 7 causes O. n causes 7. w causes n.", "hypothesis": "Does S cause w?", "label": "No"}
+{"premise": "1S causes F. i causes 1S. 2Dl causes i. wp causes 2Dl. o causes wp. GPN causes o.", "hypothesis": "Does o cause GPN?", "label": "No"}
+{"premise": "eL causes dDU. 5 causes eL. T causes 5. eJr causes T. f causes eJr. 7 causes f. CWb causes 7.", "hypothesis": "Does dDU cause eJr?", "label": "No"}
+{"premise": "yh causes An7. j causes yh. g causes j. K causes g. 0 causes K. Q causes 0. 21 causes Q. o7k causes 21.", "hypothesis": "Does An7 cause Q?", "label": "No"}
+{"premise": "2 causes 4A. 0f causes 2. t causes 0f. C causes t. jw causes C. jB causes jw. kaM causes jB. s6 causes kaM. MbT causes s6. mw causes MbT. gp causes mw. x causes gp. k causes x.", "hypothesis": "Does 4A cause mw?", "label": "No"}
+{"premise": "VI causes c. p causes VI. 9N causes p. Ux causes 9N. xXL causes Ux. bd causes xXL. rkR causes bd. e causes rkR.", "hypothesis": "Does Ux cause rkR?", "label": "No"}
+{"premise": "CWI causes m1. Kz causes CWI. H causes Kz. H causes H. AUq causes H. CvK causes AUq. 0 causes CvK. Hf causes 0. LXR causes Hf. Vr causes LXR. I causes Vr. m6 causes I. sY causes m6. iBm causes sY.", "hypothesis": "Does H cause m6?", "label": "No"}
+{"premise": "u causes 9gY. IW3 causes u. gx causes IW3. m8u causes gx. ft causes m8u. iom causes ft. P6 causes iom. 5 causes P6. LP causes 5. T causes LP. Px causes T. O5O causes Px. NEb causes O5O.", "hypothesis": "Does 9gY cause iom?", "label": "No"}
+{"premise": "v causes lc. 9AX causes v. f causes 9AX. 7 causes f. W causes 7. B causes W. C causes B.", "hypothesis": "Does B cause C?", "label": "No"}
+{"premise": "a causes If. UL causes a. yKa causes UL. kE causes yKa. S causes kE. Sl causes S. O causes Sl.", "hypothesis": "Does a cause S?", "label": "No"}
+{"premise": "R causes m. U9 causes R. Q causes U9. R causes Q. AS causes R. P causes AS. V2 causes P. oOi causes V2. BM causes oOi. ApU causes BM. 9Ql causes ApU.", "hypothesis": "Does R cause AS?", "label": "No"}
+{"premise": "30Z causes p. c causes 30Z. Kf causes c. T causes Kf. e6 causes T. rU causes e6. d causes rU. t causes d.", "hypothesis": "Does c cause t?", "label": "No"}
+{"premise": "66N causes 6l. i0w causes 66N. 5iQ causes i0w. K4 causes 5iQ. t1A causes K4. wfN causes t1A. d0 causes wfN. u7 causes d0. FL7 causes u7.", "hypothesis": "Does 6l cause d0?", "label": "No"}
+{"premise": "d causes Gz. shT causes d. d causes shT. s2Y causes d. 8yi causes s2Y. bfh causes 8yi. k causes bfh.", "hypothesis": "Does Gz cause k?", "label": "No"}
+{"premise": "BH causes g. T causes BH. Y causes T. h8 causes Y. D6 causes h8. QiP causes D6. yF causes QiP.", "hypothesis": "Does T cause QiP?", "label": "No"}
+{"premise": "zBc causes 9f. X causes zBc. ctX causes X. Rd7 causes ctX. wmW causes Rd7. A causes wmW.", "hypothesis": "Does X cause ctX?", "label": "No"}
+{"premise": "M causes I. vo causes M. y9 causes vo. Nd causes y9. 0B causes Nd. eu causes 0B. e causes eu. J causes e. xEN causes J.", "hypothesis": "Does vo cause xEN?", "label": "No"}
+{"premise": "bD causes Y. x causes bD. pZl causes x. aK causes pZl. h0P causes aK. g causes h0P. w causes g. w causes w. W causes w. reH causes W. EVb causes reH.", "hypothesis": "Does w cause reH?", "label": "No"}
+{"premise": "y causes mHo. L causes y. m causes L. 6 causes m. D causes 6. lU causes D. d causes lU.", "hypothesis": "Does lU cause d?", "label": "No"}
+{"premise": "3Fy causes cC. u causes 3Fy. cR causes u. a causes cR. gD causes a. I causes gD. K causes I. Ky2 causes K. E causes Ky2. R causes E. Zf causes R. eVy causes Zf. g8r causes eVy. PIa causes g8r.", "hypothesis": "Does K cause g8r?", "label": "No"}
+{"premise": "lsn causes U. e causes lsn. D causes e. 5 causes D. bOm causes 5. e causes bOm. d causes e. J causes d. E causes J.", "hypothesis": "Does D cause bOm?", "label": "Yes"}
+{"premise": "AOh causes 8. Jpu causes AOh. L causes Jpu. hFs causes L. rtz causes hFs. J causes rtz. V causes J. 8gX causes V. 7 causes 8gX. lsq causes 7. 2 causes lsq. 4 causes 2. w3 causes 4. 62 causes w3.", "hypothesis": "Does J cause 8gX?", "label": "No"}
+{"premise": "z causes a. f4i causes z. rv causes f4i. HM causes rv. W causes HM. l causes W. i causes l.", "hypothesis": "Does rv cause W?", "label": "No"}
+{"premise": "4M causes V. bU causes 4M. y causes bU. 1 causes y. 1Y causes 1. C causes 1Y. OP causes C. 28p causes OP. lR causes 28p. tf causes lR.", "hypothesis": "Does C cause OP?", "label": "No"}
+{"premise": "bZ causes g. 0s causes bZ. fJ causes 0s. 55z causes fJ. I4d causes 55z. L causes I4d. 9AM causes L. C causes 9AM. Q causes C. 3OY causes Q.", "hypothesis": "Does fJ cause 3OY?", "label": "No"}
+{"premise": "6RP causes 83R. 05J causes 6RP. Q causes 05J. ZOV causes Q. DY causes ZOV. 0s0 causes DY. sft causes 0s0. kdh causes sft. aIZ causes kdh. W4x causes aIZ. dpx causes W4x. x causes dpx.", "hypothesis": "Does 83R cause Q?", "label": "No"}
+{"premise": "cb causes 7c. y1 causes cb. u3k causes y1. OXo causes u3k. bh causes OXo. H causes bh.", "hypothesis": "Does u3k cause bh?", "label": "No"}
+{"premise": "S causes yb. T causes S. c causes T. 1 causes c. 3b causes 1. dWU causes 3b. zTi causes dWU. sSs causes zTi. oE causes sSs.", "hypothesis": "Does 1 cause 3b?", "label": "No"}
+{"premise": "U causes zq. 6h causes U. 1fD causes 6h. N4m causes 1fD. 8 causes N4m. VNv causes 8. bT causes VNv. BT causes bT. 6T causes BT. jMK causes 6T.", "hypothesis": "Does zq cause U?", "label": "No"}
+{"premise": "S causes TPm. 5 causes S. X causes 5. nNy causes X. L causes nNy. OcP causes L. Qf causes OcP.", "hypothesis": "Does nNy cause OcP?", "label": "No"}
+{"premise": "i1 causes 9Z. o causes i1. k causes o. dRV causes k. h3g causes dRV. 7J causes h3g. j causes 7J. zrX causes j.", "hypothesis": "Does 9Z cause o?", "label": "No"}
+{"premise": "yTi causes 89. ake causes yTi. Eqg causes ake. F causes Eqg. YM causes F. tq causes YM. iM causes tq. rR causes iM.", "hypothesis": "Does 89 cause tq?", "label": "No"}
+{"premise": "v causes r. 4SQ causes v. mTE causes 4SQ. jk causes mTE. 5 causes jk. mJ5 causes 5. oD causes mJ5. Th causes oD. PGJ causes Th. 9 causes PGJ. qe causes 9. Yn causes qe. T1 causes Yn. 5bc causes T1.", "hypothesis": "Does 5 cause Yn?", "label": "No"}
+{"premise": "n causes oM. OJf causes n. ZDb causes OJf. h4 causes ZDb. HRf causes h4. A causes HRf. 17 causes A. 5X causes 17. XK causes 5X.", "hypothesis": "Does 5X cause XK?", "label": "No"}
+{"premise": "GB causes U5. a6V causes GB. 2 causes a6V. S causes 2. 4lX causes S. 7G causes 4lX.", "hypothesis": "Does a6V cause 7G?", "label": "No"}
+{"premise": "pe causes 3. L causes pe. xd causes L. ggi causes xd. Na causes ggi. S causes Na. B causes S. TrO causes B. IZY causes TrO. i causes IZY. no causes i. l causes no.", "hypothesis": "Does pe cause Na?", "label": "No"}
+{"premise": "HND causes 2Pl. ZFK causes HND. h causes ZFK. C9K causes h. m causes C9K. bC causes m. gU causes bC. bvf causes gU. UK causes bvf. h causes UK. dp causes h. qWj causes dp. U causes qWj.", "hypothesis": "Does ZFK cause dp?", "label": "No"}
+{"premise": "bT causes H. e causes bT. fV causes e. cKY causes fV. Bo causes cKY. lk causes Bo. kX causes lk. y6s causes kX. 7 causes y6s. f causes 7. jAo causes f. WiP causes jAo.", "hypothesis": "Does fV cause kX?", "label": "No"}
+{"premise": "b causes Ak. 8Z causes b. I3 causes 8Z. f causes I3. Ie5 causes f. N9 causes Ie5. 746 causes N9. Lv causes 746. Gk causes Lv. m causes Gk. RWl causes m. A5 causes RWl. l causes A5.", "hypothesis": "Does f cause Ie5?", "label": "No"}
+{"premise": "RK6 causes a. fZ8 causes RK6. wJM causes fZ8. 3 causes wJM. k5i causes 3. aiZ causes k5i. 3 causes aiZ. HOU causes 3. gDX causes HOU. vjI causes gDX.", "hypothesis": "Does a cause RK6?", "label": "No"}
+{"premise": "T causes edN. AR causes T. Lu causes AR. u causes Lu. K1 causes u. w causes K1. v causes w.", "hypothesis": "Does T cause K1?", "label": "No"}
+{"premise": "co causes 1y. b causes co. fc causes b. EE causes fc. 24r causes EE. o causes 24r.", "hypothesis": "Does 1y cause b?", "label": "No"}
+{"premise": "Izg causes Cb. Ga causes Izg. Yj causes Ga. XO causes Yj. mFx causes XO. c causes mFx.", "hypothesis": "Does Cb cause Yj?", "label": "No"}
+{"premise": "i causes c. bhM causes i. 07 causes bhM. uoD causes 07. v causes uoD. s causes v. sHT causes s. oo5 causes sHT.", "hypothesis": "Does bhM cause oo5?", "label": "No"}
+{"premise": "Ku causes 2. iJV causes Ku. w causes iJV. i8 causes w. N causes i8. z causes N. RG causes z. EN causes RG. NV causes EN. cX causes NV. hd causes cX.", "hypothesis": "Does i8 cause hd?", "label": "No"}
+{"premise": "M causes wTg. eqx causes M. sb causes eqx. Z causes sb. v causes Z. PJA causes v. 1Ob causes PJA. qx5 causes 1Ob. xxw causes qx5.", "hypothesis": "Does sb cause xxw?", "label": "No"}
+{"premise": "h causes I. Oh causes h. zdD causes Oh. Zt causes zdD. GkP causes Zt. 7IZ causes GkP. J causes 7IZ.", "hypothesis": "Does I cause 7IZ?", "label": "No"}
+{"premise": "g6G causes dG. Ud causes g6G. sN causes Ud. mv causes sN. e causes mv. F causes e. P7 causes F. I causes P7.", "hypothesis": "Does Ud cause e?", "label": "No"}
+{"premise": "0PM causes dz. K causes 0PM. vbX causes K. hq causes vbX. VM causes hq. R causes VM. 6qr causes R. 6 causes 6qr. EyG causes 6. Va causes EyG.", "hypothesis": "Does VM cause 6?", "label": "No"}
+{"premise": "Z causes sIT. OX causes Z. Sq2 causes OX. Zw causes Sq2. D causes Zw. 8 causes D. Zz causes 8. NJe causes Zz.", "hypothesis": "Does 8 cause Zz?", "label": "No"}
+{"premise": "l causes Dkx. Cu causes l. Qec causes Cu. fv causes Qec. 2XP causes fv. U0U causes 2XP. hp3 causes U0U. Fka causes hp3. af causes Fka.", "hypothesis": "Does Cu cause Fka?", "label": "No"}
+{"premise": "W causes e8Y. Q causes W. i causes Q. ES causes i. bd causes ES. F causes bd.", "hypothesis": "Does W cause i?", "label": "No"}
+{"premise": "r causes 8. v0 causes r. l causes v0. Vf causes l. EoZ causes Vf. 4l causes EoZ. J causes 4l. QJC causes J. 0PF causes QJC.", "hypothesis": "Does r cause Vf?", "label": "No"}
+{"premise": "Y causes D. J causes Y. g3 causes J. Zs causes g3. Et causes Zs. XX causes Et. eb causes XX.", "hypothesis": "Does g3 cause Zs?", "label": "No"}
+{"premise": "P causes Pg. p causes P. rU causes p. P causes rU. Gr causes P. C4c causes Gr.", "hypothesis": "Does P cause Gr?", "label": "No"}
+{"premise": "44 causes php. i causes 44. o5t causes i. u causes o5t. oH causes u. UvO causes oH. Zx causes UvO. lGH causes Zx. f causes lGH. t3P causes f. kB causes t3P. H causes kB. 5uO causes H.", "hypothesis": "Does i cause 5uO?", "label": "No"}
+{"premise": "Kc causes Vhj. jn causes Kc. q causes jn. Us causes q. UK causes Us. iX causes UK. 3 causes iX. Qsv causes 3. FUu causes Qsv. jPd causes FUu. Xe causes jPd. fQL causes Xe. uR causes fQL.", "hypothesis": "Does Us cause uR?", "label": "No"}
+{"premise": "H causes tt. e causes H. Q causes e. B causes Q. ul causes B. DT causes ul. 2t causes DT.", "hypothesis": "Does tt cause B?", "label": "No"}
+{"premise": "T causes H. F causes T. RI1 causes F. wgX causes RI1. y8 causes wgX. SA causes y8. ix causes SA. t causes ix. CC causes t. yT causes CC.", "hypothesis": "Does RI1 cause SA?", "label": "No"}
+{"premise": "V causes qm. WS causes V. 5U0 causes WS. w causes 5U0. C causes w. nX causes C. m causes nX. nT causes m. X causes nT. IkB causes X. TvO causes IkB.", "hypothesis": "Does WS cause nT?", "label": "No"}
+{"premise": "8GD causes Sg2. se causes 8GD. VVl causes se. k causes VVl. 3lX causes k. r causes 3lX. th causes r. VWE causes th. xh causes VWE. q causes xh. MEE causes q.", "hypothesis": "Does Sg2 cause 8GD?", "label": "No"}
+{"premise": "km causes ltu. If causes km. k causes If. b causes k. XT causes b. 0Ai causes XT. iqv causes 0Ai. 8O causes iqv. 0 causes 8O. 8 causes 0. J causes 8. Glg causes J. nW causes Glg. N causes nW.", "hypothesis": "Does XT cause Glg?", "label": "No"}
+{"premise": "kJ causes j. O causes kJ. Xdh causes O. B causes Xdh. U causes B. QFC causes U. k causes QFC.", "hypothesis": "Does O cause k?", "label": "No"}
+{"premise": "Np causes Wa. Vj causes Np. 6 causes Vj. ETt causes 6. Df causes ETt. i causes Df. SZ causes i. cjf causes SZ. 6 causes cjf.", "hypothesis": "Does Wa cause ETt?", "label": "No"}
+{"premise": "L causes lF. C causes L. 4e causes C. OYA causes 4e. waw causes OYA. D causes waw.", "hypothesis": "Does 4e cause waw?", "label": "No"}
+{"premise": "YU6 causes nxo. 8 causes YU6. Br causes 8. rb causes Br. EX causes rb. G causes EX. cgS causes G. xPG causes cgS. VyI causes xPG. kH causes VyI.", "hypothesis": "Does nxo cause 8?", "label": "No"}
+{"premise": "J causes S5. J causes J. Mv causes J. 4mD causes Mv. LI causes 4mD. ik causes LI. u causes ik.", "hypothesis": "Does J cause ik?", "label": "No"}
+{"premise": "c causes 7qI. x7h causes c. 4 causes x7h. Lk causes 4. Mf7 causes Lk. TS causes Mf7. 9 causes TS.", "hypothesis": "Does c cause TS?", "label": "No"}
+{"premise": "LJ causes M. qN causes LJ. UzV causes qN. bd causes UzV. PhL causes bd. E causes PhL. ou causes E. yI causes ou. sW causes yI. Fu causes sW. A causes Fu. pE7 causes A.", "hypothesis": "Does qN cause sW?", "label": "No"}
+{"premise": "lcV causes gKS. H9 causes lcV. 7 causes H9. KaN causes 7. T causes KaN. yq causes T. xj causes yq.", "hypothesis": "Does gKS cause yq?", "label": "No"}
+{"premise": "y causes wdT. H causes y. A causes H. B8B causes A. RU2 causes B8B. S causes RU2. nC causes S. jT causes nC. s7r causes jT. sO causes s7r. 3Do causes sO. X causes 3Do.", "hypothesis": "Does wdT cause X?", "label": "No"}
+{"premise": "dUQ causes v. bIG causes dUQ. qdp causes bIG. f1r causes qdp. 4 causes f1r. I causes 4. uyW causes I.", "hypothesis": "Does v cause I?", "label": "No"}
+{"premise": "w causes iHt. w causes w. RYA causes w. ql4 causes RYA. zK causes ql4. k causes zK. O causes k. m causes O. 1Hf causes m. R causes 1Hf.", "hypothesis": "Does RYA cause R?", "label": "No"}
+{"premise": "x0 causes t. 4AY causes x0. Q causes 4AY. om causes Q. nLr causes om. I causes nLr. y causes I. 4 causes y. Cj causes 4. h55 causes Cj. NuH causes h55. e causes NuH. WD causes e.", "hypothesis": "Does t cause I?", "label": "No"}
+{"premise": "QK causes 3X5. fE causes QK. L causes fE. X causes L. YqA causes X. A causes YqA. 4G5 causes A. jCL causes 4G5. n causes jCL. D causes n. bLu causes D.", "hypothesis": "Does jCL cause n?", "label": "No"}
+{"premise": "Vny causes J4. HE causes Vny. iM causes HE. A causes iM. 3a causes A. rK2 causes 3a. e causes rK2. 4 causes e. oB causes 4. e causes oB.", "hypothesis": "Does Vny cause e?", "label": "No"}
+{"premise": "1 causes k2. rae causes 1. xhi causes rae. 0t causes xhi. TR causes 0t. S9J causes TR. IQF causes S9J. Cv causes IQF.", "hypothesis": "Does S9J cause IQF?", "label": "No"}
+{"premise": "B causes 70T. iQ causes B. TKz causes iQ. X causes TKz. VZc causes X. h causes VZc. Tpr causes h. TBF causes Tpr. DY causes TBF. I causes DY. vq causes I.", "hypothesis": "Does 70T cause TBF?", "label": "No"}
+{"premise": "N causes K. fw causes N. 6 causes fw. uNr causes 6. hGZ causes uNr. 9w3 causes hGZ. s causes 9w3. Ls causes s. Xv causes Ls. 6 causes Xv. gP causes 6. e causes gP. L causes e.", "hypothesis": "Does fw cause uNr?", "label": "No"}
+{"premise": "FJ4 causes bh3. lmE causes FJ4. tp causes lmE. 2oa causes tp. k5 causes 2oa. 5 causes k5. OTf causes 5. aN3 causes OTf.", "hypothesis": "Does k5 cause 5?", "label": "No"}
+{"premise": "vo causes BfP. VA causes vo. 1u causes VA. Q causes 1u. xCM causes Q. B causes xCM. f causes B.", "hypothesis": "Does xCM cause B?", "label": "No"}
+{"premise": "IBI causes z. i causes IBI. t2U causes i. BKT causes t2U. 7c causes BKT. o causes 7c. w2V causes o. IJ causes w2V. iL0 causes IJ. b causes iL0. 3l causes b. aL causes 3l.", "hypothesis": "Does IBI cause aL?", "label": "No"}
+{"premise": "Qkq causes ht. r causes Qkq. Cd causes r. lEZ causes Cd. A causes lEZ. ADD causes A. Uuu causes ADD. D causes Uuu. Na causes D. B causes Na. w7S causes B. n causes w7S.", "hypothesis": "Does r cause lEZ?", "label": "No"}
+{"premise": "p causes rZ1. P causes p. xZ causes P. 8n causes xZ. Cg causes 8n. uo causes Cg. J causes uo. owB causes J. I7s causes owB. wN causes I7s. k causes wN. awc causes k. i causes awc.", "hypothesis": "Does I7s cause awc?", "label": "No"}
+{"premise": "Ky causes vM. f causes Ky. q20 causes f. S causes q20. 2I causes S. Ti causes 2I. U causes Ti. qZ causes U. T causes qZ. w causes T.", "hypothesis": "Does U cause qZ?", "label": "No"}
+{"premise": "sG causes SX7. Mfx causes sG. 5ea causes Mfx. rct causes 5ea. yQ causes rct. sg causes yQ. j causes sg. WKS causes j. Eh0 causes WKS. L5 causes Eh0. fh causes L5.", "hypothesis": "Does 5ea cause j?", "label": "No"}
+{"premise": "R causes i. x causes R. H causes x. th7 causes H. J causes th7. O1q causes J. UW causes O1q. SQE causes UW. dgV causes SQE. Z causes dgV. qjK causes Z. 9Zk causes qjK.", "hypothesis": "Does R cause dgV?", "label": "No"}
+{"premise": "Air causes U. 7 causes Air. CO causes 7. hnz causes CO. tmr causes hnz. z causes tmr. c causes z. m causes c.", "hypothesis": "Does U cause z?", "label": "No"}
+{"premise": "Dd causes hst. oZj causes Dd. Q causes oZj. I causes Q. r7 causes I. Dfm causes r7. UJu causes Dfm. Xs causes UJu.", "hypothesis": "Does hst cause Q?", "label": "No"}
+{"premise": "m causes 1. W causes m. 0R causes W. W causes 0R. OIj causes W. zfc causes OIj. v causes zfc. zY causes v. d causes zY. N causes d.", "hypothesis": "Does m cause zfc?", "label": "No"}
+{"premise": "Rw causes POx. nb causes Rw. eY causes nb. KoZ causes eY. 6tZ causes KoZ. 7rN causes 6tZ. W5L causes 7rN. M causes W5L. 7Zq causes M. Qh8 causes 7Zq. 6 causes Qh8. 5 causes 6. U causes 5. QO causes U.", "hypothesis": "Does eY cause Qh8?", "label": "No"}
+{"premise": "B causes lf. Rb causes B. T3 causes Rb. jK causes T3. gS6 causes jK. eN causes gS6. v causes eN.", "hypothesis": "Does eN cause v?", "label": "No"}
+{"premise": "V causes APT. c causes V. COq causes c. Q causes COq. l7 causes Q. BH causes l7. C causes BH. Nfl causes C. Otj causes Nfl. 30 causes Otj.", "hypothesis": "Does COq cause C?", "label": "No"}
+{"premise": "vSb causes 0. IlI causes vSb. VeI causes IlI. g causes VeI. n causes g. AUA causes n. eV causes AUA. NIw causes eV. 1zp causes NIw. oF causes 1zp. IiL causes oF. l causes IiL. HRI causes l. f causes HRI.", "hypothesis": "Does n cause oF?", "label": "No"}
+{"premise": "6n causes n1M. Yz causes 6n. fA9 causes Yz. Wug causes fA9. dF causes Wug. qh2 causes dF. 1 causes qh2. qix causes 1. M causes qix. xG causes M. l causes xG. P causes l.", "hypothesis": "Does dF cause P?", "label": "No"}
+{"premise": "CPZ causes BR. po4 causes CPZ. s causes po4. Mzb causes s. CP causes Mzb. veM causes CP. C0t causes veM. j causes C0t. H causes j.", "hypothesis": "Does CPZ cause j?", "label": "No"}
+{"premise": "70o causes L. m causes 70o. Zsb causes m. I1q causes Zsb. Ame causes I1q. A2 causes Ame. Jn causes A2. FUR causes Jn. 5 causes FUR. a causes 5. 2 causes a. YDO causes 2. gU causes YDO. F causes gU.", "hypothesis": "Does 5 cause gU?", "label": "No"}
+{"premise": "UxS causes 8J. M causes UxS. G causes M. og causes G. w causes og. rX causes w.", "hypothesis": "Does UxS cause G?", "label": "No"}
+{"premise": "Zx causes RY. d causes Zx. iy causes d. yaH causes iy. cH causes yaH. j causes cH. z causes j. Wf causes z. 16 causes Wf. B causes 16. 8S causes B. fG causes 8S.", "hypothesis": "Does 16 cause 8S?", "label": "No"}
+{"premise": "bI causes M0. RdV causes bI. od causes RdV. a causes od. 7 causes a. dk causes 7. ZW causes dk. C causes ZW. G3r causes C. c5U causes G3r.", "hypothesis": "Does M0 cause a?", "label": "No"}
+{"premise": "L causes eAM. B6 causes L. Q causes B6. tT causes Q. 75y causes tT. YgC causes 75y. mu causes YgC.", "hypothesis": "Does B6 cause YgC?", "label": "No"}
+{"premise": "D causes Zp. J2 causes D. F2 causes J2. L causes F2. D causes L. eN causes D. P causes eN. cc causes P. M3O causes cc. M causes M3O. s causes M. b causes s.", "hypothesis": "Does D cause P?", "label": "No"}
+{"premise": "ZHW causes Z. b causes ZHW. A7 causes b. dT causes A7. N causes dT. 5B causes N. d7 causes 5B.", "hypothesis": "Does Z cause A7?", "label": "No"}
+{"premise": "K3 causes 6g. Ra causes K3. Fu causes Ra. OmX causes Fu. GnG causes OmX. Y causes GnG. 3 causes Y. UU causes 3. 9O causes UU. 5 causes 9O. R causes 5. hH causes R.", "hypothesis": "Does Fu cause 9O?", "label": "No"}
+{"premise": "cwa causes e86. 0k causes cwa. DK causes 0k. YE causes DK. kK causes YE. v5m causes kK. t causes v5m. eA causes t. eN2 causes eA. XA causes eN2. lx causes XA. Qcp causes lx.", "hypothesis": "Does eN2 cause XA?", "label": "No"}
+{"premise": "Jg causes K0. 9zx causes Jg. 8ir causes 9zx. ga6 causes 8ir. 9GJ causes ga6. g causes 9GJ. eF causes g. B9 causes eF. LMd causes B9. H8 causes LMd. Wyu causes H8.", "hypothesis": "Does eF cause H8?", "label": "No"}
+{"premise": "J0w causes ZF. B causes J0w. n causes B. TXz causes n. FW causes TXz. 5 causes FW.", "hypothesis": "Does ZF cause J0w?", "label": "No"}
+{"premise": "ce5 causes 1Rr. wJ0 causes ce5. 1 causes wJ0. na causes 1. Aum causes na. Y1M causes Aum. KQ causes Y1M. Yn1 causes KQ. ziy causes Yn1. c causes ziy. mbq causes c. OG5 causes mbq.", "hypothesis": "Does ce5 cause 1?", "label": "No"}
+{"premise": "kCQ causes x. sd causes kCQ. op causes sd. ZX causes op. gR4 causes ZX. LLJ causes gR4. uST causes LLJ. v causes uST.", "hypothesis": "Does sd cause ZX?", "label": "No"}
+{"premise": "1WD causes o. FP causes 1WD. xi causes FP. ZLG causes xi. IP causes ZLG. bW causes IP. Q causes bW. Mv causes Q.", "hypothesis": "Does o cause xi?", "label": "No"}
+{"premise": "kT causes d. Iss causes kT. Si causes Iss. NtX causes Si. tR causes NtX. 14t causes tR. 1v causes 14t. T causes 1v. DK causes T. 5lr causes DK. M8 causes 5lr.", "hypothesis": "Does 14t cause M8?", "label": "No"}
+{"premise": "0K causes R. Ii causes 0K. r causes Ii. GU causes r. MYs causes GU. eB causes MYs. MU causes eB.", "hypothesis": "Does R cause r?", "label": "No"}
+{"premise": "b5 causes W. D causes b5. LdJ causes D. 0T causes LdJ. 7V7 causes 0T. VV7 causes 7V7. 2 causes VV7. VsQ causes 2.", "hypothesis": "Does 0T cause VsQ?", "label": "No"}
+{"premise": "54 causes j. pm causes 54. H8o causes pm. jbf causes H8o. n0 causes jbf. G causes n0. v causes G.", "hypothesis": "Does jbf cause G?", "label": "No"}
+{"premise": "g0 causes 9tz. tt causes g0. idt causes tt. w causes idt. Ux causes w. C causes Ux. Z causes C.", "hypothesis": "Does tt cause Ux?", "label": "No"}
+{"premise": "JhM causes uvJ. P causes JhM. xs4 causes P. H causes xs4. L causes H. ph causes L. 8QJ causes ph. P6n causes 8QJ. IBy causes P6n. I9 causes IBy. k5T causes I9. G causes k5T.", "hypothesis": "Does H cause G?", "label": "No"}
+{"premise": "Bg7 causes RQR. kD causes Bg7. Vl9 causes kD. JqH causes Vl9. iiq causes JqH. PR causes iiq. qJA causes PR. 0 causes qJA. 6 causes 0. lL causes 6. AA causes lL. L1L causes AA. Pa causes L1L.", "hypothesis": "Does qJA cause L1L?", "label": "No"}
+{"premise": "T causes v. ymb causes T. Q8 causes ymb. Vdm causes Q8. R6 causes Vdm. lp causes R6. Zw causes lp. Ck causes Zw. z causes Ck. Haa causes z. 5 causes Haa. x causes 5. C causes x.", "hypothesis": "Does Q8 cause Haa?", "label": "No"}
+{"premise": "M causes jaA. s causes M. cei causes s. bbI causes cei. I causes bbI. R5 causes I. Sqg causes R5. 7 causes Sqg. FwC causes 7. CLp causes FwC. yZ causes CLp. L causes yZ. HI causes L.", "hypothesis": "Does R5 cause Sqg?", "label": "No"}
+{"premise": "8 causes G. 1ks causes 8. gY causes 1ks. Ut causes gY. WA6 causes Ut. c causes WA6. uib causes c. DZh causes uib.", "hypothesis": "Does 8 cause Ut?", "label": "No"}
+{"premise": "C causes OI. Z causes C. RlN causes Z. z causes RlN. Xw causes z. KOd causes Xw.", "hypothesis": "Does C cause Xw?", "label": "No"}
+{"premise": "pN causes P3. bL causes pN. zv causes bL. JcJ causes zv. OSD causes JcJ. 6C causes OSD. wp causes 6C. PI causes wp. N causes PI. 9 causes N. H causes 9. 1G causes H. ZaI causes 1G.", "hypothesis": "Does bL cause wp?", "label": "No"}
+{"premise": "E causes ek. 8R causes E. gBq causes 8R. OK1 causes gBq. 6O causes OK1. Co causes 6O. S9 causes Co.", "hypothesis": "Does Co cause S9?", "label": "No"}
+{"premise": "n1B causes KXp. Fvc causes n1B. B causes Fvc. q causes B. Cyh causes q. C causes Cyh. E causes C.", "hypothesis": "Does q cause E?", "label": "No"}
+{"premise": "ji causes j4s. nCS causes ji. ntv causes nCS. kB causes ntv. 7 causes kB. NZ causes 7. et causes NZ. Sa causes et. hX causes Sa.", "hypothesis": "Does 7 cause hX?", "label": "No"}
+{"premise": "X causes u7. nW causes X. 2t causes nW. S causes 2t. ok causes S. c causes ok. T causes c. 8 causes T. GDk causes 8. P causes GDk. 9 causes P. K0 causes 9. 1 causes K0. MQ causes 1.", "hypothesis": "Does 2t cause 9?", "label": "No"}
+{"premise": "f causes Q6u. cwR causes f. k6E causes cwR. x causes k6E. Z causes x. AC causes Z. prO causes AC. L causes prO.", "hypothesis": "Does Q6u cause AC?", "label": "No"}
+{"premise": "9mg causes s. 1mW causes 9mg. L7B causes 1mW. A causes L7B. GLK causes A. j causes GLK. jU causes j. VT causes jU. 7wY causes VT. u causes 7wY. J causes u. P causes J.", "hypothesis": "Does J cause P?", "label": "No"}
+{"premise": "6 causes J. RgW causes 6. tp causes RgW. I causes tp. H causes I. 6S causes H. Qo causes 6S. bC causes Qo. R causes bC. u causes R. 0IH causes u. D01 causes 0IH.", "hypothesis": "Does u cause D01?", "label": "No"}
+{"premise": "m6 causes jf. W1x causes m6. 1 causes W1x. P causes 1. wee causes P. vs causes wee. wSw causes vs. vgH causes wSw.", "hypothesis": "Does 1 cause P?", "label": "No"}
+{"premise": "2 causes QI. uE causes 2. 5P causes uE. rJ causes 5P. cs causes rJ. GI causes cs. pVj causes GI. S causes pVj. 2z causes S. K causes 2z.", "hypothesis": "Does 2 cause GI?", "label": "No"}
+{"premise": "I causes Ggp. y causes I. x causes y. TQb causes x. I causes TQb. K4K causes I. B causes K4K.", "hypothesis": "Does y cause TQb?", "label": "Yes"}
+{"premise": "HYI causes 0t. U0a causes HYI. I causes U0a. rcH causes I. Ka causes rcH. bN causes Ka. xc causes bN.", "hypothesis": "Does I cause Ka?", "label": "No"}
+{"premise": "ps causes 3. acG causes ps. 4 causes acG. Cl causes 4. FA causes Cl. u causes FA. V causes u. J6 causes V. u causes J6. a causes u. b1 causes a. K1 causes b1. x8t causes K1.", "hypothesis": "Does J6 cause K1?", "label": "No"}
+{"premise": "0 causes 1. X causes 0. w causes X. UK causes w. eGK causes UK. I causes eGK.", "hypothesis": "Does X cause I?", "label": "No"}
+{"premise": "zcb causes r. BR causes zcb. iQ causes BR. EPI causes iQ. Jc causes EPI. 5 causes Jc. Qn causes 5. 4h8 causes Qn. C1U causes 4h8. 8FL causes C1U. Dm causes 8FL. s causes Dm. KL causes s.", "hypothesis": "Does r cause s?", "label": "No"}
+{"premise": "og causes B4Q. RJJ causes og. EIN causes RJJ. f causes EIN. cZg causes f. 3w causes cZg. kmu causes 3w. bb causes kmu. k causes bb.", "hypothesis": "Does 3w cause k?", "label": "No"}
+{"premise": "qmb causes g. VuH causes qmb. JNJ causes VuH. M6 causes JNJ. tag causes M6. LRH causes tag. EI causes LRH. F causes EI. Xu causes F.", "hypothesis": "Does tag cause EI?", "label": "No"}
+{"premise": "HJ causes xvf. m3 causes HJ. ymo causes m3. M causes ymo. T5W causes M. 6S causes T5W. 0 causes 6S. k1c causes 0. B causes k1c. ej causes B. n28 causes ej.", "hypothesis": "Does m3 cause k1c?", "label": "No"}
+{"premise": "iGe causes H0P. y8v causes iGe. q causes y8v. e causes q. uF causes e. xm causes uF. J0 causes xm. Yh causes J0. 3KZ causes Yh. U causes 3KZ.", "hypothesis": "Does uF cause xm?", "label": "No"}
+{"premise": "o0x causes p. j causes o0x. 4QQ causes j. FQ causes 4QQ. yDE causes FQ. OQh causes yDE. g9I causes OQh. cwx causes g9I.", "hypothesis": "Does 4QQ cause yDE?", "label": "No"}
+{"premise": "QE causes I. TT causes QE. 2 causes TT. G causes 2. 64 causes G. qi causes 64. Mif causes qi.", "hypothesis": "Does 2 cause Mif?", "label": "No"}
+{"premise": "C causes bU. GCl causes C. 9e causes GCl. IAG causes 9e. jZp causes IAG. uOp causes jZp. CbW causes uOp. d causes CbW. S1 causes d. r causes S1. s causes r. ig causes s. Y causes ig. m causes Y.", "hypothesis": "Does CbW cause m?", "label": "No"}
+{"premise": "X4 causes yT. dMl causes X4. p causes dMl. Wh causes p. ej causes Wh. RCi causes ej. 91 causes RCi. It causes 91.", "hypothesis": "Does RCi cause It?", "label": "No"}
+{"premise": "au9 causes qja. 9 causes au9. 1s causes 9. Ime causes 1s. F0 causes Ime. j causes F0. 39 causes j.", "hypothesis": "Does 9 cause F0?", "label": "No"}
+{"premise": "N6 causes G8. R causes N6. YA3 causes R. w causes YA3. 5Jr causes w. X causes 5Jr. 4N1 causes X. Q causes 4N1. yxc causes Q. c causes yxc. G causes c. F7 causes G. tK causes F7. ts causes tK.", "hypothesis": "Does F7 cause tK?", "label": "No"}
+{"premise": "Aj causes 4. fT causes Aj. 1h causes fT. it causes 1h. udj causes it. ag0 causes udj. SaS causes ag0. Q causes SaS. tu1 causes Q.", "hypothesis": "Does fT cause ag0?", "label": "No"}
+{"premise": "3QK causes Uu. l causes 3QK. g8 causes l. TI causes g8. e causes TI. J5 causes e. de causes J5. 73 causes de. gMK causes 73.", "hypothesis": "Does Uu cause l?", "label": "No"}
+{"premise": "P causes L. 6wf causes P. bvY causes 6wf. YJm causes bvY. 0 causes YJm. bp causes 0.", "hypothesis": "Does YJm cause bp?", "label": "No"}
+{"premise": "Hy causes 14. f causes Hy. MhG causes f. J causes MhG. 3S2 causes J. c causes 3S2. 6eg causes c. JbR causes 6eg. v causes JbR. z causes v. B causes z. 4y causes B.", "hypothesis": "Does 3S2 cause z?", "label": "No"}
+{"premise": "tWh causes FK0. XsA causes tWh. tJr causes XsA. J causes tJr. 5 causes J. bD1 causes 5. m causes bD1. cy1 causes m. NX causes cy1.", "hypothesis": "Does FK0 cause 5?", "label": "No"}
+{"premise": "G causes M. k causes G. Ug causes k. ut causes Ug. uz causes ut. Lw causes uz. w causes Lw. GWO causes w.", "hypothesis": "Does k cause uz?", "label": "No"}
