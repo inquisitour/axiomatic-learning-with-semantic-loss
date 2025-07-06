@@ -10,17 +10,6 @@ A robust Python toolkit for generating synthetic datasets for causal reasoning t
 - **Validated Output**: Automatic validation ensures all generated examples are logically consistent
 - **Modular Architecture**: Clean, extensible design with separation of concerns
 
-## 📦 Installation
-
-```bash
-# Clone the repository
-git clone <repository-url>
-cd axiomatic-data-generator
-
-# Install dependencies (Python 3.7+)
-pip install -r requirements.txt
-```
-
 ### Dependencies
 - Python 3.7+
 - No external dependencies required (uses only standard library)
