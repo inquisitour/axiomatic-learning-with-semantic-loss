@@ -7,6 +7,7 @@ from dataclasses import dataclass
 from collections import defaultdict, deque
 from itertools import combinations
 from abc import ABC, abstractmethod
+from functools import lru_cache
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -76,22 +77,25 @@ class GraphGenerator:
         name_length_range: Tuple[int, int]
     ) -> Tuple[List[str], List[Tuple[str, str]]]:
         """Generate a proper DAG with guaranteed topological ordering"""
+
         if num_nodes < 2:
             raise ValueError("Number of nodes must be at least 2")
         
         nodes = [self.generate_node_name(name_length_range) for _ in range(num_nodes)]
         edges = []
         
-        # Create topological ordering to ensure DAG property
+        # Create topological ordering with controlled branching to ensure DAG property 
         for i in range(num_nodes):
-            for j in range(i + 1, num_nodes):
-                if random.random() < edge_density:
-                    edges.append((nodes[i], nodes[j]))
+            # Limit number of edges from each node
+            max_edges = min(int(num_nodes * edge_density), 5)  # Cap at 5 edges
+            targets = random.sample(range(i+1, num_nodes), min(max_edges, num_nodes-i-1))
+            edges.extend((nodes[i], nodes[j]) for j in targets)
         
         # Ensure connectivity - add backbone chain if graph is too sparse
         if len(edges) < num_nodes - 1:
+            edge_starts = {edge[0] for edge in edges}
             for i in range(num_nodes - 1):
-                if not any(nodes[i] in edge for edge in edges):
+                if nodes[i] not in edge_starts:
                     edges.append((nodes[i], nodes[i + 1]))
         
         return nodes, edges
@@ -158,22 +162,26 @@ class CausalReasoner:
         
         paths = []
         queue = deque([(start, [start])])
-        
+        visited = {start: 1}
+
         while queue:
             current, path = queue.popleft()
-            
             if len(path) > max_length:
                 continue
             
-            if current == end and len(path) > 1:
-                paths.append(path)
-                continue
-            
             for neighbor in graph['neighbors'][current]:
-                if neighbor not in path:  # Avoid cycles
-                    new_path = path + [neighbor]
-                    queue.append((neighbor, new_path))
-        
+                if neighbor in path:  # Skip cycles
+                    continue
+                if neighbor == end:
+                    paths.append(path + [neighbor])
+                    if len(paths) > 10:  # Limit total paths considered
+                        return paths
+                    continue
+                
+                if visited.get(neighbor, 0) < 3:  # Limit visits per node
+                    visited[neighbor] = visited.get(neighbor, 0) + 1
+                    queue.append((neighbor, path + [neighbor]))
+    
         return paths
     
     def is_collider(self, graph: Dict[str, Dict[str, List[str]]], node: str, prev_node: str, next_node: str) -> bool:
@@ -216,6 +224,15 @@ class CausalReasoner:
                     queue.append(child)
         
         return False
+    
+    @lru_cache(maxsize=1000)
+    def is_d_separated_cached(self, edges_tuple: Tuple[Tuple[str, str], ...], 
+                             node1: str, node2: str, 
+                             conditioning_set_tuple: Tuple[str, ...]) -> bool:
+        """Memoized version that accepts hashable tuple inputs"""
+        edges = [list(pair) for pair in edges_tuple]
+        conditioning_set = set(conditioning_set_tuple)
+        return self.is_d_separated(edges, node1, node2, conditioning_set)
     
     def is_d_separated(
         self, 
@@ -304,6 +321,10 @@ class DataValidator:
     def validate_d_separation_example(self, example: Dict) -> bool:
         """Validate that d-separation example is logically correct"""
         try:
+            edges = self.parse_premise(example['premise'])
+            if len(edges) < len(example['premise'].split()) // 3:  # Quick sanity check
+                return False
+            
             premise = example['premise']
             hypothesis = example['hypothesis']
             label = example['label']
@@ -454,50 +475,60 @@ class AxiomaticDataGenerator:
         name_length_range: Tuple[int, int], 
         edge_density: float
     ) -> Dict:
-        """Generate a d-separation rule example"""
-        max_attempts = 10
+        """Optimized d-separation example generator with early rejection"""
+        max_attempts = 10  # Reduced from 10 due to better filtering
         
         for attempt in range(max_attempts):
             try:
+                # 1. Generate DAG with optimized method
                 nodes, edges = self.graph_generator.generate_dag(
                     num_nodes, edge_density, name_length_range
                 )
                 
+                # 2. Early rejection criteria
                 if len(nodes) < 2:
                     continue
-                
-                # Select two distinct nodes
+                    
+                # Reject graphs that are too sparse or too dense
+                if len(edges) < num_nodes - 1 or len(edges) > num_nodes * 3:
+                    continue
+                    
+                # 3. Efficient node selection
                 node1, node2 = random.sample(nodes, 2)
+                possible_conditioning_nodes = [n for n in nodes if n not in {node1, node2}]
                 
-                # Select conditioning set
-                possible_conditioning_nodes = [n for n in nodes if n != node1 and n != node2]
-                conditioning_size = random.randint(0, min(self.config.max_conditioning_set_size, len(possible_conditioning_nodes)))
+                # 4. Optimized conditioning set generation
+                conditioning_size = random.randint(
+                    0, 
+                    min(self.config.max_conditioning_set_size, len(possible_conditioning_nodes))
+                )
+                conditioning_set = set(random.sample(possible_conditioning_nodes, conditioning_size)) if conditioning_size > 0 else set()
                 
-                conditioning_set = set()
-                if possible_conditioning_nodes and conditioning_size > 0:
-                    conditioning_set = set(random.sample(possible_conditioning_nodes, conditioning_size))
+                # 5. Memoized d-separation check
+                edges_tuple = tuple(tuple(edge) for edge in edges)  # Convert to hashable
+                cs_tuple = tuple(sorted(conditioning_set)) if conditioning_set else ()
+                is_dsep = self.reasoner.is_d_separated(edges_tuple, node1, node2, cs_tuple)
                 
+                # 6. Build example
                 premise = self.build_premise(edges)
-                
-                if conditioning_set:
-                    hypothesis = f"Are {node1} and {node2} d-separated given {{{', '.join(sorted(conditioning_set))}}}?"
-                else:
-                    hypothesis = f"Are {node1} and {node2} d-separated?"
-                
-                label = "Yes" if self.reasoner.is_d_separated(edges, node1, node2, conditioning_set) else "No"
+                hypothesis = (
+                    f"Are {node1} and {node2} d-separated given {{{', '.join(sorted(conditioning_set))}}}?" 
+                    if conditioning_set 
+                    else f"Are {node1} and {node2} d-separated?"
+                )
                 
                 example = {
                     "premise": premise,
                     "hypothesis": hypothesis,
-                    "label": label
+                    "label": "Yes" if is_dsep else "No"
                 }
                 
-                # Validate the example
+                # 7. Fast validation
                 if self.validator.validate_d_separation_example(example):
                     return example
-                
+                    
             except Exception as e:
-                logger.warning(f"Attempt {attempt + 1} failed: {e}")
+                logger.debug(f"Attempt {attempt + 1} failed: {e}")  # Changed to debug level
                 continue
         
         raise RuntimeError("Failed to generate valid d-separation example after maximum attempts")
@@ -543,11 +574,19 @@ class AxiomaticDataGenerator:
         return data
     
     def generate_evaluation_data(self, num_examples: int, eval_type: str = "length") -> List[Dict]:
-        """Generate evaluation data of specified type"""
+        """Optimized version that handles all evaluation types correctly"""
         data = []
-        logger.info(f"Generating {num_examples} evaluation examples for {eval_type}")
+        generated = 0
+        attempts = 0
+        max_attempts = num_examples * 10  # More generous attempt limit
         
-        for i in range(num_examples):
+        # Different attempt strategies per type
+        if eval_type == "branching":
+            max_attempts = num_examples * 5  # Branching needs more attempts
+        
+        logger.info(f"Generating {num_examples} {eval_type} evaluation examples")
+        
+        while generated < num_examples and attempts < max_attempts:
             try:
                 if eval_type == "length":
                     example = self.generate_transitivity_example(
@@ -555,19 +594,25 @@ class AxiomaticDataGenerator:
                         self.config.node_name_length_train,
                         flip_prob=0.0
                     )
+                    data.append(example)
+                    generated += 1
+                    
                 elif eval_type == "reversed":
                     nodes, edges = self.graph_generator.generate_sequential_chain(
                         random.randint(*self.config.chain_length_eval),
                         self.config.node_name_length_train
                     )
-                    # Reverse all edges
-                    edges = [(b, a) for a, b in edges]
+                    edges = [(b, a) for a, b in edges]  # Reverse all edges
                     i, j = sorted(random.sample(range(len(nodes)), 2))
                     premise = self.build_premise(edges)
                     hypothesis = f"Does {nodes[i]} cause {nodes[j]}?"
                     label = "Yes" if self.reasoner.find_path_dfs(edges, nodes[i], nodes[j]) else "No"
                     example = {"premise": premise, "hypothesis": hypothesis, "label": label}
                     
+                    if self.validator.validate_transitivity_example(example):
+                        data.append(example)
+                        generated += 1
+                        
                 elif eval_type == "shuffled":
                     example = self.generate_transitivity_example(
                         self.config.chain_length_eval,
@@ -575,35 +620,80 @@ class AxiomaticDataGenerator:
                         flip_prob=0.5,
                         shuffle=True
                     )
+                    data.append(example)
+                    generated += 1
+                    
                 elif eval_type == "long_names":
                     example = self.generate_transitivity_example(
                         self.config.chain_length_train,
                         self.config.node_name_length_eval,
                         flip_prob=0.5
                     )
+                    data.append(example)
+                    generated += 1
+                    
                 elif eval_type == "branching":
                     edge_density = random.uniform(*self.config.branching_factor_eval)
                     length = random.randint(*self.config.chain_length_eval)
-                    example = self.generate_d_separation_example(
-                        length,
-                        self.config.node_name_length_train,
-                        edge_density
+                    
+                    nodes, edges = self.graph_generator.generate_dag(
+                        num_nodes=length,
+                        edge_density=edge_density,
+                        name_length_range=self.config.node_name_length_train
                     )
+                    
+                    # Validate edge count
+                    min_edges = length - 1
+                    max_edges = length * 5
+                    if len(edges) < min_edges or len(edges) > max_edges:
+                        attempts += 1
+                        continue
+                    
+                    node1, node2 = random.sample(nodes, 2)
+                    possible_conditioning_nodes = [n for n in nodes if n not in {node1, node2}]
+                    
+                    conditioning_size = random.randint(
+                        0, 
+                        min(self.config.max_conditioning_set_size, len(possible_conditioning_nodes))
+                    )
+                    conditioning_set = set(random.sample(possible_conditioning_nodes, conditioning_size)) if conditioning_size > 0 else set()
+                    
+                    premise = self.build_premise(edges)
+                    hypothesis = (
+                        f"Are {node1} and {node2} d-separated given {{{', '.join(sorted(conditioning_set))}}}?" 
+                        if conditioning_set 
+                        else f"Are {node1} and {node2} d-separated?"
+                    )
+                    
+                    edges_tuple = tuple(tuple(edge) for edge in edges)
+                    cs_tuple = tuple(sorted(conditioning_set))
+                    is_dsep = self.reasoner.is_d_separated_cached(edges_tuple, node1, node2, cs_tuple)
+                    
+                    example = {
+                        "premise": premise,
+                        "hypothesis": hypothesis,
+                        "label": "Yes" if is_dsep else "No"
+                    }
+                    
+                    if self.validator.validate_d_separation_example(example):
+                        data.append(example)
+                        generated += 1
+                        
                 else:
                     raise ValueError(f"Unknown evaluation type: {eval_type}")
                 
-                data.append(example)
+                attempts += 1
                 
-                if (i + 1) % 50 == 0:
-                    logger.info(f"Generated {i + 1}/{num_examples} examples")
+                if generated % 50 == 0:
+                    logger.info(f"Progress: {generated}/{num_examples} {eval_type} examples")
                     
             except Exception as e:
-                logger.error(f"Error generating example {i + 1}: {e}")
+                logger.debug(f"Attempt {attempts} failed: {e}")
+                attempts += 1
                 continue
         
-        logger.info(f"Successfully generated {len(data)} examples")
+        logger.info(f"Generated {len(data)}/{num_examples} {eval_type} examples (Acceptance: {generated/max(1,attempts):.1%})")
         return data
-
 
 def save_to_jsonl(data: List[Dict], filename: str) -> None:
     """Save generated data to JSONL file"""
@@ -625,8 +715,8 @@ def main():
     try:
         # Generate training data
         logger.info("=== Starting Training Data Generation ===")
-        transitivity_train = generator.generate_training_data(1000, "transitivity")
-        dsep_train = generator.generate_training_data(1000, "d-separation")
+        transitivity_train = generator.generate_training_data(50000, "transitivity")
+        dsep_train = generator.generate_training_data(50000, "d-separation")
         
         save_to_jsonl(transitivity_train, "transitivity_train.jsonl")
         save_to_jsonl(dsep_train, "dsep_train.jsonl")
@@ -636,7 +726,7 @@ def main():
         evaluation_types = ["length", "reversed", "shuffled", "long_names", "branching"]
         
         for eval_type in evaluation_types:
-            eval_data = generator.generate_evaluation_data(200, eval_type)
+            eval_data = generator.generate_evaluation_data(10000, eval_type)
             save_to_jsonl(eval_data, f"{eval_type}_eval.jsonl")
         
         logger.info("=== Data Generation Complete ===")
@@ -644,7 +734,6 @@ def main():
     except Exception as e:
         logger.error(f"Error in main execution: {e}")
         raise
-
 
 if __name__ == "__main__":
     main()
