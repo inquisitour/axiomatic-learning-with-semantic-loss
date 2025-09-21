@@ -3,3 +3,5 @@
 <p align="center">
   <img src="arch.png" alt="System Architecture" width="900">
 </p>
+
+# [Comprehensive Evaluation Guide](./comprehensive_evaluation_guide.md)
