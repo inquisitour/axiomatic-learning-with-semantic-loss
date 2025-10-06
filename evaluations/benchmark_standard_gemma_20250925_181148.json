@@ -1,0 +1,116 @@
+{
+  "timestamp": "2025-09-25T18:11:48.577919",
+  "model_tested": "unsloth/gemma-3-270m-it-bnb-4bit",
+  "model_path": "/home/sagemaker-user/gemma-3-270m-IT",
+  "evaluation_results": {
+    "branching": {
+      "accuracy": 97.92,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0,
+      "yes_predictions": 12,
+      "no_predictions": 9988,
+      "confusion_matrix": {
+        "tp": 0,
+        "tn": 9792,
+        "fp": 12,
+        "fn": 196
+      }
+    },
+    "length": {
+      "accuracy": 57.16,
+      "precision": 100.0,
+      "recall": 57.16,
+      "f1": 72.74115551030796,
+      "yes_predictions": 5716,
+      "no_predictions": 4284,
+      "confusion_matrix": {
+        "tp": 5716,
+        "tn": 0,
+        "fp": 0,
+        "fn": 4284
+      }
+    },
+    "long_names": {
+      "accuracy": 64.62,
+      "precision": 47.96488427773344,
+      "recall": 34.9825378346915,
+      "f1": 40.45775833052844,
+      "yes_predictions": 2506,
+      "no_predictions": 7494,
+      "confusion_matrix": {
+        "tp": 1202,
+        "tn": 5260,
+        "fp": 1304,
+        "fn": 2234
+      }
+    },
+    "reversed": {
+      "accuracy": 60.18,
+      "precision": 2.0429009193054135,
+      "recall": 35.39823008849557,
+      "f1": 3.8628681796233697,
+      "yes_predictions": 3916,
+      "no_predictions": 6084,
+      "confusion_matrix": {
+        "tp": 80,
+        "tn": 5938,
+        "fp": 3836,
+        "fn": 146
+      }
+    },
+    "shuffled": {
+      "accuracy": 70.66,
+      "precision": 0.272572402044293,
+      "recall": 53.333333333333336,
+      "f1": 0.5423728813559322,
+      "yes_predictions": 2935,
+      "no_predictions": 7065,
+      "confusion_matrix": {
+        "tp": 8,
+        "tn": 7058,
+        "fp": 2927,
+        "fn": 7
+      }
+    }
+  },
+  "comparison": {
+    "length": {
+      "baseline": 86.0,
+      "current_model": 57.16,
+      "best_semantic_v4": 99.5,
+      "improvement_vs_baseline": -28.840000000000003
+    },
+    "branching": {
+      "baseline": 6.0,
+      "current_model": 97.92,
+      "best_semantic_v4": 61.5,
+      "improvement_vs_baseline": 91.92
+    },
+    "reversed": {
+      "baseline": 96.0,
+      "current_model": 60.18,
+      "best_semantic_v4": 97.0,
+      "improvement_vs_baseline": -35.82
+    },
+    "shuffled": {
+      "baseline": 85.0,
+      "current_model": 70.66,
+      "best_semantic_v4": 95.0,
+      "improvement_vs_baseline": -14.340000000000003
+    },
+    "long_names": {
+      "baseline": 96.0,
+      "current_model": 64.62,
+      "best_semantic_v4": 100.0,
+      "improvement_vs_baseline": -31.379999999999995
+    }
+  },
+  "average_metrics": {
+    "current_accuracy": 70.108,
+    "current_f1": 23.52083098036314,
+    "baseline_avg": 73.8,
+    "best_v4_avg": 90.6,
+    "improvement_vs_baseline": -3.691999999999993
+  }
+}

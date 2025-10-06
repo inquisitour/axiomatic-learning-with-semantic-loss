@@ -1,0 +1,116 @@
+{
+  "timestamp": "2025-10-02T19:19:02.203480",
+  "model_tested": "dseparation_baseline",
+  "model_path": "/content/drive/MyDrive/gemma_dseparation_models/dseparation_v1_merged",
+  "evaluation_results": {
+    "branching": {
+      "accuracy": 98.04,
+      "precision": 0,
+      "recall": 0.0,
+      "f1": 0,
+      "yes_predictions": 0,
+      "no_predictions": 10000,
+      "confusion_matrix": {
+        "tp": 0,
+        "tn": 9804,
+        "fp": 0,
+        "fn": 196
+      }
+    },
+    "length": {
+      "accuracy": 18.89,
+      "precision": 100.0,
+      "recall": 18.89,
+      "f1": 31.777273109597107,
+      "yes_predictions": 1889,
+      "no_predictions": 8111,
+      "confusion_matrix": {
+        "tp": 1889,
+        "tn": 0,
+        "fp": 0,
+        "fn": 8111
+      }
+    },
+    "long_names": {
+      "accuracy": 65.75999999999999,
+      "precision": 100.0,
+      "recall": 0.3492433061699651,
+      "f1": 0.6960556844547563,
+      "yes_predictions": 12,
+      "no_predictions": 9988,
+      "confusion_matrix": {
+        "tp": 12,
+        "tn": 6564,
+        "fp": 0,
+        "fn": 3424
+      }
+    },
+    "reversed": {
+      "accuracy": 90.23,
+      "precision": 2.1656050955414012,
+      "recall": 7.52212389380531,
+      "f1": 3.3630069238377844,
+      "yes_predictions": 785,
+      "no_predictions": 9215,
+      "confusion_matrix": {
+        "tp": 17,
+        "tn": 9006,
+        "fp": 768,
+        "fn": 209
+      }
+    },
+    "shuffled": {
+      "accuracy": 96.43,
+      "precision": 1.1428571428571428,
+      "recall": 26.666666666666668,
+      "f1": 2.191780821917808,
+      "yes_predictions": 350,
+      "no_predictions": 9650,
+      "confusion_matrix": {
+        "tp": 4,
+        "tn": 9639,
+        "fp": 346,
+        "fn": 11
+      }
+    }
+  },
+  "comparison": {
+    "length": {
+      "baseline": 86.0,
+      "current_model": 18.89,
+      "best_semantic_v4": 99.5,
+      "improvement_vs_baseline": -67.11
+    },
+    "branching": {
+      "baseline": 6.0,
+      "current_model": 98.04,
+      "best_semantic_v4": 61.5,
+      "improvement_vs_baseline": 92.04
+    },
+    "reversed": {
+      "baseline": 96.0,
+      "current_model": 90.23,
+      "best_semantic_v4": 97.0,
+      "improvement_vs_baseline": -5.769999999999996
+    },
+    "shuffled": {
+      "baseline": 85.0,
+      "current_model": 96.43,
+      "best_semantic_v4": 95.0,
+      "improvement_vs_baseline": 11.430000000000007
+    },
+    "long_names": {
+      "baseline": 96.0,
+      "current_model": 65.75999999999999,
+      "best_semantic_v4": 100.0,
+      "improvement_vs_baseline": -30.24000000000001
+    }
+  },
+  "average_metrics": {
+    "current_accuracy": 73.87,
+    "current_f1": 7.605623307961491,
+    "baseline_avg": 73.8,
+    "best_v4_avg": 90.6,
+    "improvement_vs_baseline": 0.07000000000000739
+  }
+}
